@@ -48,5 +48,10 @@ Once everything is set up, you can start scraping data. Here’s how:
 4. The script will automatically scrape Google Scholar or Pubmed for articles matching your query and save the results in an Excel file named scholar.xlsx or pubmed.xlsx.
 5. The Excel file will contain separate sheets for each year from START to END years, with columns for titles, authors, publication years, best models mentioned, dataset sizes, and more.
 
-## Contact
-If you have any questions or feedback, feel free to reach out to me at suraj21209@iiitd.ac.in.
+
+
+## Contributors
+If you have any questions or feedback, feel free to reach out to us:
+- SURAJ KUMAR JHA(suraj21209@iiitd.ac.in)
+- RAJAT JAISWAL(rajat21184@iiitd.ac.in)
+- TARUN BANSAL(tarun21210@iiitd.ac.in)
