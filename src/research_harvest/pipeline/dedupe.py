@@ -4,7 +4,7 @@ Duplicate removal.
 Searching two catalogues for one topic returns the same paper twice, so records
 are collapsed on the strongest identifier they share: DOI first, then the
 source's own id, then a normalised title. Where two copies describe the same
-work, the more complete one is kept — a PubMed record with a structured abstract
+work, the more complete one is kept - a PubMed record with a structured abstract
 beats an OpenAlex stub of the same paper.
 """
 

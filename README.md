@@ -1,6 +1,6 @@
 # research-harvest
 
-**Literature harvesting for systematic reviews — search, deduplicate, and pull the numbers out of the abstracts.**
+**Literature harvesting for systematic reviews - search, deduplicate, and pull the numbers out of the abstracts.**
 
 Give it a topic. It searches PubMed and OpenAlex, merges the results, removes the
 papers that appear in both, and extracts what each abstract actually reports:
@@ -35,8 +35,8 @@ One row per paper, with the derived columns filled in from the abstract:
 | title | year | models_mentioned | dataset_size | headline_metric |
 |---|---|---|---|---|
 | Machine learning based dynamic consensus model for predicting blood-brain barrier permeability | 2023 | XGBoost; Random Forest | 8153 | ACCURACY 0.978 |
-| MATH: A Deep Learning Approach in QSAR for Estrogen Receptor Alpha Inhibitors | 2023 | QSAR; Transformer | — | AUC 0.977 |
-| Exploring blood-brain barrier passage using atomic weighted vector and machine learning | 2024 | Gradient Boosting; SVM | — | ACCURACY 0.98 |
+| MATH: A Deep Learning Approach in QSAR for Estrogen Receptor Alpha Inhibitors | 2023 | QSAR; Transformer | - | AUC 0.977 |
+| Exploring blood-brain barrier passage using atomic weighted vector and machine learning | 2024 | Gradient Boosting; SVM | - | ACCURACY 0.98 |
 
 Those are real rows from a real run, not illustrations.
 
@@ -49,15 +49,15 @@ each one. It worked, slowly, until it did not:
 | Then | Now |
 |---|---|
 | Selenium + a 17 MB `chromedriver.exe` committed twice to the repo | Two official REST APIs, no browser, no binaries |
-| `sleep(5)` between every article, hundreds of page loads per year of results | Batched `efetch` — a year of results in a couple of requests |
+| `sleep(5)` between every article, hundreds of page loads per year of results | Batched `efetch` - a year of results in a couple of requests |
 | Crashed with `AttributeError` on the first paper without an abstract | Every field optional; a thin record still comes back |
-| Google Scholar, which blocks automated access — the committed `scholar.xlsx` was empty | OpenAlex, an open catalogue of 250M+ works with a documented free API |
+| Google Scholar, which blocks automated access - the committed `scholar.xlsx` was empty | OpenAlex, an open catalogue of 250M+ works with a documented free API |
 | "Biggest number in any sentence" as the dataset size | Cohort patterns (`n = 512`, `1,204 patients`) with a plausibility range |
 | Every sentence containing "best" glued together as the top model | A metric parser that normalises `94.2%`, `AUC = 0.91` and `F1 of 0.88` |
 | ~200 hand-listed keywords with repeats, frameworks mixed in with architectures | 114 grouped terms, deduplicated, longest-match-first, word-boundary safe |
-| No deduplication, though two sources return the same paper | DOI → source id → normalised title, keeping the fuller copy |
+| No deduplication, though two sources return the same paper | DOI -> source id -> normalised title, keeping the fuller copy |
 | Hardcoded years, hardcoded page counts, bare `input()` | A proper CLI with filters |
-| No tests, no packaging, no CI | 115 tests, 95% coverage, packaged, linted, CI on 3.9–3.13 |
+| No tests, no packaging, no CI | 115 tests, 95% coverage, packaged, linted, CI on 3.9-3.13 |
 
 ## Install
 
@@ -74,7 +74,7 @@ Python 3.9 or newer. No API key needed for either source, and no browser.
 ## Use
 
 ```bash
-# The basics — JSONL to stdout, so it pipes into jq
+# The basics - JSONL to stdout, so it pipes into jq
 research-harvest "drug discovery deep learning" --limit 50 | jq -r .title
 
 # Both catalogues, recent work only, straight to a spreadsheet
@@ -129,20 +129,20 @@ for article in result.articles:
 
 ```
   query
-    │
-    ├── sources/pubmed.py      esearch → efetch, batched 200 at a time
-    └── sources/openalex.py    cursor paging, abstracts rebuilt from the inverted index
-    │
-    ▼
+    |
+    +-- sources/pubmed.py      esearch -> efetch, batched 200 at a time
+    +-- sources/openalex.py    cursor paging, abstracts rebuilt from the inverted index
+    |
+    v
   pipeline/clean.py     entities, markup, bracketed titles, copyright boilerplate
-    ▼
-  pipeline/dedupe.py    DOI → source id → normalised title; fuller copy wins
-    ▼
+    v
+  pipeline/dedupe.py    DOI -> source id -> normalised title; fuller copy wins
+    v
   pipeline/enrich.py    method mentions, cohort size, headline metric
-    ▼
+    v
   pipeline/filters.py   year, abstract, DOI, terms, method family, cohort size
-    ▼
-  export.py             jsonl │ csv │ xlsx (one sheet per year)
+    v
+  export.py             jsonl | csv | xlsx (one sheet per year)
 ```
 
 Each source is just an object with a `search()` method returning `Article`
@@ -152,8 +152,8 @@ one line to `sources/__init__.py`.
 ### Being a good citizen
 
 Both APIs are free and neither asks for a key, which is worth not abusing. Every
-request goes through a rate limiter — 3/second for PubMed, 9/second if you set
-`NCBI_API_KEY`, 5/second for OpenAlex — and retries with exponential backoff on
+request goes through a rate limiter - 3/second for PubMed, 9/second if you set
+`NCBI_API_KEY`, 5/second for OpenAlex - and retries with exponential backoff on
 429s and 5xx, but never on a 4xx that would fail identically forever. Set
 `NCBI_EMAIL` or `OPENALEX_MAILTO` to identify yourself and land in the faster pool.
 

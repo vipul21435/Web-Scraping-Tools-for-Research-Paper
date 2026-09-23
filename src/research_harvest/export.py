@@ -27,7 +27,7 @@ COLUMNS: Sequence[str] = (
 
 
 def write_jsonl(articles: Iterable[Article], path: Path) -> int:
-    """One JSON object per line — the format that keeps every field intact."""
+    """One JSON object per line - the format that keeps every field intact."""
     path.parent.mkdir(parents=True, exist_ok=True)
     count = 0
     with path.open("w", encoding="utf-8") as handle:

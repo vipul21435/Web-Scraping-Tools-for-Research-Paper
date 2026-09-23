@@ -3,7 +3,7 @@ The vocabulary used to spot which methods a paper actually reports.
 
 The original list was assembled by hand and had grown to roughly 200 entries with
 repeats ("XGBoost" three times, "A3C" twice) and tooling mixed in with
-architectures — matching "PyTorch" told you the framework, not the method. It is
+architectures - matching "PyTorch" told you the framework, not the method. It is
 now grouped, deduplicated, and searched longest-first so that "Convolutional
 Neural Network" is reported rather than the "CNN" hiding inside it.
 """
