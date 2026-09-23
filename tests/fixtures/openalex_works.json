@@ -1,0 +1,1668 @@
+{
+ "meta": {
+  "count": 68352,
+  "page": 1,
+  "per_page": 3,
+  "next_cursor": null
+ },
+ "results": [
+  {
+   "id": "https://openalex.org/W2887113605",
+   "doi": "https://doi.org/10.1002/cmdc.201800533",
+   "display_name": "In Silico Prediction of Blood–Brain Barrier Permeability of Compounds by Machine Learning and Resampling Methods",
+   "publication_year": 2018,
+   "abstract_inverted_index": {
+    "The": [
+     0
+    ],
+    "blood-brain": [
+     1
+    ],
+    "barrier": [
+     2
+    ],
+    "(BBB)": [
+     3
+    ],
+    "as": [
+     4,
+     109,
+     217,
+     219
+    ],
+    "a": [
+     5,
+     29,
+     48,
+     65,
+     99,
+     145
+    ],
+    "part": [
+     6
+    ],
+    "of": [
+     7,
+     59,
+     83,
+     101,
+     124,
+     144,
+     166,
+     180,
+     188,
+     206,
+     215
+    ],
+    "absorption": [
+     8
+    ],
+    "protects": [
+     9
+    ],
+    "the": [
+     10,
+     16,
+     20,
+     57,
+     81,
+     96,
+     122,
+     138,
+     141,
+     148,
+     157,
+     163,
+     167,
+     170,
+     204
+    ],
+    "central": [
+     11
+    ],
+    "nervous": [
+     12
+    ],
+    "system": [
+     13
+    ],
+    "by": [
+     14
+    ],
+    "separating": [
+     15
+    ],
+    "brain": [
+     17
+    ],
+    "tissue": [
+     18
+    ],
+    "from": [
+     19
+    ],
+    "bloodstream.": [
+     21
+    ],
+    "In": [
+     22
+    ],
+    "recent": [
+     23
+    ],
+    "years,": [
+     24
+    ],
+    "BBB": [
+     25,
+     198
+    ],
+    "permeability": [
+     26
+    ],
+    "has": [
+     27
+    ],
+    "become": [
+     28
+    ],
+    "critical": [
+     30
+    ],
+    "issue": [
+     31
+    ],
+    "in": [
+     32,
+     213,
+     227
+    ],
+    "chemical": [
+     33
+    ],
+    "ADMET": [
+     34
+    ],
+    "prediction,": [
+     35
+    ],
+    "but": [
+     36
+    ],
+    "almost": [
+     37
+    ],
+    "all": [
+     38
+    ],
+    "models": [
+     39,
+     84,
+     202
+    ],
+    "were": [
+     40,
+     77,
+     210
+    ],
+    "built": [
+     41,
+     64
+    ],
+    "using": [
+     42
+    ],
+    "imbalanced": [
+     43,
+     125
+    ],
+    "data": [
+     44,
+     61,
+     126,
+     160
+    ],
+    "sets,": [
+     45
+    ],
+    "which": [
+     46,
+     222
+    ],
+    "caused": [
+     47
+    ],
+    "high": [
+     49
+    ],
+    "false-positive": [
+     50
+    ],
+    "rate.": [
+     51
+    ],
+    "Therefore,": [
+     52
+    ],
+    "we": [
+     53,
+     103
+    ],
+    "tried": [
+     54
+    ],
+    "to": [
+     55,
+     94,
+     154,
+     183,
+     191
+    ],
+    "solve": [
+     56,
+     121
+    ],
+    "problem": [
+     58,
+     123
+    ],
+    "biased": [
+     60
+    ],
+    "sets": [
+     62,
+     127
+    ],
+    "and": [
+     63,
+     74,
+     91,
+     115,
+     128,
+     187,
+     209
+    ],
+    "reliable": [
+     66
+    ],
+    "classification": [
+     67,
+     199
+    ],
+    "model": [
+     68,
+     168
+    ],
+    "with": [
+     69,
+     85,
+     133,
+     175,
+     196
+    ],
+    "2358": [
+     70
+    ],
+    "compounds.": [
+     71,
+     194
+    ],
+    "Machine": [
+     72
+    ],
+    "learning": [
+     73
+    ],
+    "resampling": [
+     75,
+     106
+    ],
+    "methods": [
+     76,
+     107
+    ],
+    "used": [
+     78
+    ],
+    "simultaneously": [
+     79
+    ],
+    "for": [
+     80,
+     156,
+     169
+    ],
+    "refinement": [
+     82
+    ],
+    "both": [
+     86
+    ],
+    "2": [
+     87
+    ],
+    "D": [
+     88
+    ],
+    "molecular": [
+     89,
+     92
+    ],
+    "descriptors": [
+     90
+    ],
+    "fingerprints": [
+     93
+    ],
+    "represent": [
+     95
+    ],
+    "chemicals.": [
+     97
+    ],
+    "Through": [
+     98
+    ],
+    "series": [
+     100
+    ],
+    "evaluation,": [
+     102
+    ],
+    "realized": [
+     104
+    ],
+    "that": [
+     105,
+     129
+    ],
+    "such": [
+     108
+    ],
+    "Synthetic": [
+     110
+    ],
+    "Minority": [
+     111
+    ],
+    "Oversampling": [
+     112
+    ],
+    "Technique": [
+     113
+    ],
+    "(SMOTE)": [
+     114
+    ],
+    "SMOTE+edited": [
+     116
+    ],
+    "nearest": [
+     117
+    ],
+    "neighbor": [
+     118
+    ],
+    "could": [
+     119
+    ],
+    "effectively": [
+     120
+    ],
+    "MACCS": [
+     130
+    ],
+    "fingerprint": [
+     131
+    ],
+    "combined": [
+     132
+    ],
+    "support": [
+     134
+    ],
+    "vector": [
+     135
+    ],
+    "machine": [
+     136
+    ],
+    "performed": [
+     137
+    ],
+    "best.": [
+     139
+    ],
+    "After": [
+     140
+    ],
+    "final": [
+     142,
+     158
+    ],
+    "construction": [
+     143
+    ],
+    "consensus": [
+     146
+    ],
+    "model,": [
+     147
+    ],
+    "overall": [
+     149
+    ],
+    "accuracy": [
+     150,
+     164
+    ],
+    "rate": [
+     151,
+     165,
+     205
+    ],
+    "was": [
+     152,
+     173
+    ],
+    "increased": [
+     153
+    ],
+    "0.966": [
+     155
+    ],
+    "external": [
+     159
+    ],
+    "set.": [
+     161
+    ],
+    "Also,": [
+     162
+    ],
+    "test": [
+     171
+    ],
+    "set": [
+     172
+    ],
+    "0.919,": [
+     174
+    ],
+    "an": [
+     176
+    ],
+    "excellent": [
+     177
+    ],
+    "balanced": [
+     178
+    ],
+    "capacity": [
+     179
+    ],
+    "0.925": [
+     181
+    ],
+    "(sensitivity)": [
+     182
+    ],
+    "predict": [
+     184,
+     192
+    ],
+    "BBB-positive": [
+     185,
+     216
+    ],
+    "compounds": [
+     186
+    ],
+    "0.899": [
+     189
+    ],
+    "(specificity)": [
+     190
+    ],
+    "BBB-negative": [
+     193,
+     220
+    ],
+    "Compared": [
+     195
+    ],
+    "other": [
+     197
+    ],
+    "models,": [
+     200
+    ],
+    "our": [
+     201
+    ],
+    "reduced": [
+     203
+    ],
+    "false": [
+     207
+    ],
+    "positives": [
+     208
+    ],
+    "more": [
+     211
+    ],
+    "robust": [
+     212
+    ],
+    "prediction": [
+     214
+    ],
+    "well": [
+     218
+    ],
+    "compounds,": [
+     221
+    ],
+    "would": [
+     223
+    ],
+    "be": [
+     224
+    ],
+    "quite": [
+     225
+    ],
+    "helpful": [
+     226
+    ],
+    "early": [
+     228
+    ],
+    "drug": [
+     229
+    ],
+    "discovery.": [
+     230
+    ]
+   },
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Zhuang Wang"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Hongbin Yang"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Zengrui Wu"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Tianduanyi Wang"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Weihua Li"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Yun Tang"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "ChemMedChem"
+    }
+   },
+   "concepts": [
+    {
+     "display_name": "Resampling"
+    },
+    {
+     "display_name": "False positive paradox"
+    },
+    {
+     "display_name": "Oversampling"
+    },
+    {
+     "display_name": "Artificial intelligence"
+    },
+    {
+     "display_name": "Computer science"
+    }
+   ]
+  },
+  {
+   "id": "https://openalex.org/W4378217890",
+   "doi": "https://doi.org/10.1038/s41392-023-01481-w",
+   "display_name": "The blood–brain barrier: Structure, regulation and drug delivery",
+   "publication_year": 2023,
+   "abstract_inverted_index": {
+    "Blood-brain": [
+     0
+    ],
+    "barrier": [
+     1,
+     135
+    ],
+    "(BBB)": [
+     2
+    ],
+    "is": [
+     3
+    ],
+    "a": [
+     4,
+     79,
+     91
+    ],
+    "natural": [
+     5
+    ],
+    "protective": [
+     6
+    ],
+    "membrane": [
+     7,
+     154
+    ],
+    "that": [
+     8
+    ],
+    "prevents": [
+     9
+    ],
+    "central": [
+     10
+    ],
+    "nervous": [
+     11
+    ],
+    "system": [
+     12
+    ],
+    "(CNS)": [
+     13
+    ],
+    "from": [
+     14,
+     173
+    ],
+    "toxins": [
+     15
+    ],
+    "and": [
+     16,
+     36,
+     69,
+     76,
+     87,
+     105,
+     110,
+     129,
+     144,
+     159,
+     176,
+     183,
+     189,
+     198
+    ],
+    "pathogens": [
+     17
+    ],
+    "in": [
+     18,
+     66,
+     73,
+     100,
+     203
+    ],
+    "blood.": [
+     19
+    ],
+    "However,": [
+     20
+    ],
+    "the": [
+     21,
+     26,
+     32,
+     43,
+     49,
+     64,
+     101,
+     114,
+     126
+    ],
+    "presence": [
+     22
+    ],
+    "of": [
+     23,
+     81,
+     103,
+     116,
+     211
+    ],
+    "BBB": [
+     24,
+     111,
+     121,
+     145,
+     157,
+     164
+    ],
+    "complicates": [
+     25
+    ],
+    "pharmacotherapy": [
+     27
+    ],
+    "for": [
+     28,
+     94,
+     119,
+     141,
+     201
+    ],
+    "CNS": [
+     29
+    ],
+    "disorders": [
+     30
+    ],
+    "as": [
+     31,
+     56,
+     58,
+     90
+    ],
+    "most": [
+     33
+    ],
+    "chemical": [
+     34
+    ],
+    "drugs": [
+     35
+    ],
+    "biopharmaceuticals": [
+     37
+    ],
+    "have": [
+     38
+    ],
+    "been": [
+     39
+    ],
+    "impeded": [
+     40
+    ],
+    "to": [
+     41,
+     52,
+     63,
+     133,
+     162,
+     194
+    ],
+    "enter": [
+     42
+    ],
+    "brain.": [
+     44
+    ],
+    "Insufficient": [
+     45
+    ],
+    "drug": [
+     46,
+     96,
+     169,
+     213
+    ],
+    "delivery": [
+     47,
+     170,
+     214
+    ],
+    "into": [
+     48
+    ],
+    "brain": [
+     50,
+     109
+    ],
+    "leads": [
+     51
+    ],
+    "low": [
+     53
+    ],
+    "therapeutic": [
+     54
+    ],
+    "efficacy": [
+     55
+    ],
+    "well": [
+     57
+    ],
+    "aggravated": [
+     59
+    ],
+    "side": [
+     60
+    ],
+    "effects": [
+     61
+    ],
+    "due": [
+     62
+    ],
+    "accumulation": [
+     65
+    ],
+    "other": [
+     67,
+     160
+    ],
+    "organs": [
+     68
+    ],
+    "tissues.": [
+     70
+    ],
+    "Recent": [
+     71
+    ],
+    "breakthrough": [
+     72
+    ],
+    "materials": [
+     74,
+     83,
+     178
+    ],
+    "science": [
+     75
+    ],
+    "nanotechnology": [
+     77
+    ],
+    "provides": [
+     78
+    ],
+    "library": [
+     80
+    ],
+    "advanced": [
+     82
+    ],
+    "with": [
+     84,
+     179
+    ],
+    "customized": [
+     85
+    ],
+    "structure": [
+     86,
+     128
+    ],
+    "property": [
+     88
+    ],
+    "serving": [
+     89
+    ],
+    "powerful": [
+     92
+    ],
+    "toolkit": [
+     93
+    ],
+    "targeted": [
+     95
+    ],
+    "delivery.": [
+     97
+    ],
+    "In-depth": [
+     98
+    ],
+    "research": [
+     99
+    ],
+    "field": [
+     102
+    ],
+    "anatomical": [
+     104
+    ],
+    "pathological": [
+     106
+    ],
+    "study": [
+     107
+    ],
+    "on": [
+     108,
+     208
+    ],
+    "further": [
+     112,
+     209
+    ],
+    "facilitates": [
+     113
+    ],
+    "development": [
+     115,
+     210
+    ],
+    "brain-targeted": [
+     117,
+     212
+    ],
+    "strategies": [
+     118,
+     140,
+     161
+    ],
+    "enhanced": [
+     120
+    ],
+    "crossing.": [
+     122
+    ],
+    "In": [
+     123
+    ],
+    "this": [
+     124,
+     134
+    ],
+    "review,": [
+     125
+    ],
+    "physiological": [
+     127
+    ],
+    "different": [
+     130
+    ],
+    "cells": [
+     131
+    ],
+    "contributing": [
+     132
+    ],
+    "are": [
+     136,
+     166,
+     187
+    ],
+    "summarized.": [
+     137
+    ],
+    "Various": [
+     138
+    ],
+    "emerging": [
+     139
+    ],
+    "permeability": [
+     142
+    ],
+    "regulation": [
+     143
+    ],
+    "crossing": [
+     146
+    ],
+    "including": [
+     147
+    ],
+    "passive": [
+     148
+    ],
+    "transcytosis,": [
+     149
+    ],
+    "intranasal": [
+     150
+    ],
+    "administration,": [
+     151
+    ],
+    "ligands": [
+     152
+    ],
+    "conjugation,": [
+     153
+    ],
+    "coating,": [
+     155
+    ],
+    "stimuli-triggered": [
+     156
+    ],
+    "disruption,": [
+     158
+    ],
+    "overcome": [
+     163
+    ],
+    "obstacle": [
+     165
+    ],
+    "highlighted.": [
+     167
+    ],
+    "Versatile": [
+     168
+    ],
+    "systems": [
+     171
+    ],
+    "ranging": [
+     172
+    ],
+    "organic,": [
+     174
+    ],
+    "inorganic,": [
+     175
+    ],
+    "biologics-derived": [
+     177
+    ],
+    "their": [
+     180
+    ],
+    "synthesis": [
+     181
+    ],
+    "procedures": [
+     182
+    ],
+    "unique": [
+     184
+    ],
+    "physio-chemical": [
+     185
+    ],
+    "properties": [
+     186
+    ],
+    "summarized": [
+     188
+    ],
+    "analyzed.": [
+     190
+    ],
+    "This": [
+     191
+    ],
+    "review": [
+     192
+    ],
+    "aims": [
+     193
+    ],
+    "provide": [
+     195
+    ],
+    "an": [
+     196
+    ],
+    "up-to-date": [
+     197
+    ],
+    "comprehensive": [
+     199
+    ],
+    "guideline": [
+     200
+    ],
+    "researchers": [
+     202
+    ],
+    "diverse": [
+     204
+    ],
+    "fields,": [
+     205
+    ],
+    "offering": [
+     206
+    ],
+    "perspectives": [
+     207
+    ],
+    "system.": [
+     215
+    ]
+   },
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Di Wu"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Qi Chen"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Xiaojie Chen"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Feng Han"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Zhong Chen"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Yi Wang"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Signal Transduction and Targeted Therapy"
+    }
+   },
+   "concepts": [
+    {
+     "display_name": "Blood–brain barrier"
+    },
+    {
+     "display_name": "Drug"
+    },
+    {
+     "display_name": "Drug delivery"
+    },
+    {
+     "display_name": "Medicine"
+    },
+    {
+     "display_name": "Pharmacology"
+    }
+   ]
+  },
+  {
+   "id": "https://openalex.org/W2594183968",
+   "doi": "https://doi.org/10.1039/c7sc02664a",
+   "display_name": "MoleculeNet: a benchmark for molecular machine learning",
+   "publication_year": 2017,
+   "abstract_inverted_index": {
+    "Molecular": [
+     0
+    ],
+    "machine": [
+     1,
+     22,
+     82,
+     128
+    ],
+    "learning": [
+     2,
+     23,
+     106,
+     129,
+     177
+    ],
+    "has": [
+     3,
+     36
+    ],
+    "been": [
+     4,
+     37
+    ],
+    "maturing": [
+     5
+    ],
+    "rapidly": [
+     6
+    ],
+    "over": [
+     7
+    ],
+    "the": [
+     8,
+     15,
+     41,
+     49,
+     67,
+     112,
+     133,
+     164
+    ],
+    "last": [
+     9
+    ],
+    "few": [
+     10
+    ],
+    "years.": [
+     11
+    ],
+    "Improved": [
+     12
+    ],
+    "methods": [
+     13
+    ],
+    "and": [
+     14,
+     93,
+     105,
+     130,
+     154,
+     161
+    ],
+    "presence": [
+     16
+    ],
+    "of": [
+     17,
+     43,
+     51,
+     69,
+     99,
+     111,
+     166,
+     175
+    ],
+    "larger": [
+     18
+    ],
+    "datasets": [
+     19,
+     61
+    ],
+    "have": [
+     20
+    ],
+    "enabled": [
+     21
+    ],
+    "algorithms": [
+     24,
+     56,
+     107
+    ],
+    "to": [
+     25,
+     40,
+     47,
+     65,
+     146
+    ],
+    "make": [
+     26
+    ],
+    "increasingly": [
+     27
+    ],
+    "accurate": [
+     28
+    ],
+    "predictions": [
+     29
+    ],
+    "about": [
+     30
+    ],
+    "molecular": [
+     31,
+     81,
+     103,
+     127
+    ],
+    "properties.": [
+     32
+    ],
+    "However,": [
+     33,
+     136
+    ],
+    "algorithmic": [
+     34
+    ],
+    "progress": [
+     35
+    ],
+    "limited": [
+     38
+    ],
+    "due": [
+     39
+    ],
+    "lack": [
+     42
+    ],
+    "a": [
+     44,
+     76
+    ],
+    "standard": [
+     45
+    ],
+    "benchmark": [
+     46,
+     79
+    ],
+    "compare": [
+     48
+    ],
+    "efficacy": [
+     50
+    ],
+    "proposed": [
+     52,
+     70,
+     102
+    ],
+    "methods;": [
+     53
+    ],
+    "most": [
+     54
+    ],
+    "new": [
+     55
+    ],
+    "are": [
+     57,
+     123
+    ],
+    "benchmarked": [
+     58
+    ],
+    "on": [
+     59
+    ],
+    "different": [
+     60
+    ],
+    "making": [
+     62
+    ],
+    "it": [
+     63
+    ],
+    "challenging": [
+     64
+    ],
+    "gauge": [
+     66
+    ],
+    "quality": [
+     68,
+     96
+    ],
+    "methods.": [
+     71
+    ],
+    "This": [
+     72
+    ],
+    "work": [
+     73
+    ],
+    "introduces": [
+     74
+    ],
+    "MoleculeNet,": [
+     75
+    ],
+    "large": [
+     77
+    ],
+    "scale": [
+     78
+    ],
+    "for": [
+     80,
+     91,
+     126
+    ],
+    "learning.": [
+     83
+    ],
+    "MoleculeNet": [
+     84,
+     117
+    ],
+    "curates": [
+     85
+    ],
+    "multiple": [
+     86,
+     100
+    ],
+    "public": [
+     87
+    ],
+    "datasets,": [
+     88,
+     163
+    ],
+    "establishes": [
+     89
+    ],
+    "metrics": [
+     90
+    ],
+    "evaluation,": [
+     92
+    ],
+    "offers": [
+     94
+    ],
+    "high": [
+     95
+    ],
+    "open-source": [
+     97
+    ],
+    "implementations": [
+     98
+    ],
+    "previously": [
+     101
+    ],
+    "featurization": [
+     104
+    ],
+    "(released": [
+     108
+    ],
+    "as": [
+     109
+    ],
+    "part": [
+     110
+    ],
+    "DeepChem": [
+     113
+    ],
+    "open": [
+     114
+    ],
+    "source": [
+     115
+    ],
+    "library).": [
+     116
+    ],
+    "benchmarks": [
+     118
+    ],
+    "demonstrate": [
+     119
+    ],
+    "that": [
+     120
+    ],
+    "learnable": [
+     121
+    ],
+    "representations": [
+     122,
+     143
+    ],
+    "powerful": [
+     124
+    ],
+    "tools": [
+     125
+    ],
+    "broadly": [
+     131
+    ],
+    "offer": [
+     132
+    ],
+    "best": [
+     134
+    ],
+    "performance.": [
+     135
+    ],
+    "this": [
+     137
+    ],
+    "result": [
+     138
+    ],
+    "comes": [
+     139
+    ],
+    "with": [
+     140,
+     148
+    ],
+    "caveats.": [
+     141
+    ],
+    "Learnable": [
+     142
+    ],
+    "still": [
+     144
+    ],
+    "struggle": [
+     145
+    ],
+    "deal": [
+     147
+    ],
+    "complex": [
+     149
+    ],
+    "tasks": [
+     150
+    ],
+    "under": [
+     151
+    ],
+    "data": [
+     152
+    ],
+    "scarcity": [
+     153
+    ],
+    "highly": [
+     155
+    ],
+    "imbalanced": [
+     156
+    ],
+    "classification.": [
+     157
+    ],
+    "For": [
+     158
+    ],
+    "quantum": [
+     159
+    ],
+    "mechanical": [
+     160
+    ],
+    "biophysical": [
+     162
+    ],
+    "use": [
+     165
+    ],
+    "physics-aware": [
+     167
+    ],
+    "featurizations": [
+     168
+    ],
+    "can": [
+     169
+    ],
+    "be": [
+     170
+    ],
+    "more": [
+     171
+    ],
+    "important": [
+     172
+    ],
+    "than": [
+     173
+    ],
+    "choice": [
+     174
+    ],
+    "particular": [
+     176
+    ],
+    "algorithm.": [
+     178
+    ]
+   },
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Zhenqin Wu"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Bharath Ramsundar"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Evan N. Feinberg"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Joseph S. Gomes"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Caleb Geniesse"
+     }
+    },
+    {
+     "author": {
+      "display_name": "Aneesh Pappu"
+     }
+    }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Chemical Science"
+    }
+   },
+   "concepts": [
+    {
+     "display_name": "Benchmark (surveying)"
+    },
+    {
+     "display_name": "Computer science"
+    },
+    {
+     "display_name": "Machine learning"
+    },
+    {
+     "display_name": "Artificial intelligence"
+    },
+    {
+     "display_name": "Scale (ratio)"
+    }
+   ]
+  }
+ ]
+}

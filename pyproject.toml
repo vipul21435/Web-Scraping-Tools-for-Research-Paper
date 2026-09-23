@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-harvest"
+version = "1.0.0"
+description = "Harvest, deduplicate and enrich scholarly literature from PubMed and OpenAlex."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Vipul Raj Jha", email = "vipul21435@iiitd.ac.in" }]
+keywords = ["pubmed", "openalex", "literature-review", "text-mining", "research"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+excel = ["openpyxl>=3.1"]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "responses>=0.24",
+  "ruff>=0.5",
+  "openpyxl>=3.1",
+]
+
+[project.scripts]
+research-harvest = "research_harvest.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/vipul21435/Web-Scraping-Tools-for-Research-Paper"
+Issues = "https://github.com/vipul21435/Web-Scraping-Tools-for-Research-Paper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "RET", "PTH"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
