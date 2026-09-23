@@ -27,7 +27,7 @@ COLUMNS: Sequence[str] = (
 
 
 def write_jsonl(articles: Iterable[Article], path: Path) -> int:
-    """One JSON object per line - the format that keeps every field intact."""
+    """One JSON object per line, which keeps every field intact."""
     path.parent.mkdir(parents=True, exist_ok=True)
     count = 0
     with path.open("w", encoding="utf-8") as handle:
@@ -58,7 +58,7 @@ def write_xlsx(articles: Iterable[Article], path: Path, *, sheet_per_year: bool 
     """
     try:
         from openpyxl import Workbook
-    except ImportError as exc:  # pragma: no cover - depends on the install extra
+    except ImportError as exc:  # pragma: no cover (depends on the install extra)
         raise RuntimeError(
             "Excel output needs the optional dependency. Install it with:\n"
             '    pip install "research-harvest[excel]"'

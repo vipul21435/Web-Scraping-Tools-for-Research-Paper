@@ -54,7 +54,7 @@ def harvest(
     """
     Run the whole pipeline: fetch, clean, deduplicate, enrich, filter.
 
-    One source failing does not abandon the run - the others still return, and
+    One source failing does not abandon the run. The others still return, and
     the failure is recorded on the result.
     """
     result = HarvestResult()

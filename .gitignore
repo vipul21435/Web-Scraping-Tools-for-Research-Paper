@@ -19,7 +19,7 @@ env/
 htmlcov/
 coverage.xml
 
-# harvest output - results are reproducible, so they do not belong in git
+# harvest output. Results are reproducible, so they do not belong in git
 out/
 *.jsonl
 *.xlsx
