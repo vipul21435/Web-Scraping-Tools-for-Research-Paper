@@ -1,10 +1,10 @@
 """
 Pulls structured facts out of an abstract.
 
-The original scanned for roughly 200 keywords, took "the biggest number in any
-sentence" as the dataset size, and glued together every sentence containing the
-word "best" as the top model. All three are replaced here with rules that are
-narrow enough to be right and small enough to test.
+The rules here are deliberately narrow. An abstract is written for a human, so
+anything clever enough to catch every phrasing will also catch a p-value or a
+year and report it as a cohort size. Better to miss a few and be right about the
+ones it does return.
 """
 
 from __future__ import annotations

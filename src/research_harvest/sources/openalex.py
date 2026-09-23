@@ -1,12 +1,9 @@
 """
 OpenAlex through its official REST API.
 
-This replaces the project's Google Scholar scraper. Scholar publishes no API and
-its terms forbid automated access; the old Selenium version was blocked by a
-CAPTCHA within a page or two, which is why the committed `scholar.xlsx` was
-empty. OpenAlex is an open catalogue of over 250 million works with a free,
-documented API and no key, so it covers the same ground without pretending to be
-a browser.
+OpenAlex is an open catalogue of over 250 million works with a documented API
+and no key. It is the second source here because Google Scholar, which covers
+similar ground, publishes no API and blocks automated access.
 """
 
 from __future__ import annotations

@@ -1,11 +1,10 @@
 """
-The vocabulary used to spot which methods a paper actually reports.
+Method names to look for in an abstract.
 
-The original list was assembled by hand and had grown to roughly 200 entries with
-repeats ("XGBoost" three times, "A3C" twice) and tooling mixed in with
-architectures - matching "PyTorch" told you the framework, not the method. It is
-now grouped, deduplicated, and searched longest-first so that "Convolutional
-Neural Network" is reported rather than the "CNN" hiding inside it.
+Grouped by family, deduplicated, and matched longest first so a paper that says
+"Convolutional Neural Network" is reported as that and not as the "CNN" sitting
+inside the phrase. Frameworks are deliberately absent: matching "PyTorch" tells
+you what someone built with, not what they built.
 """
 
 from __future__ import annotations

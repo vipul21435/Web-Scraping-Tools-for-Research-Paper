@@ -53,9 +53,8 @@ def write_xlsx(articles: Iterable[Article], path: Path, *, sheet_per_year: bool 
     """
     Excel output, optionally split into one sheet per publication year.
 
-    The original called the private `ExcelWriter._save()`, which pandas renamed
-    between releases; this uses openpyxl directly and keeps pandas out of the
-    dependency list entirely.
+    Written with openpyxl directly, which keeps pandas out of the dependency
+    list for a job that only needs a workbook and some rows.
     """
     try:
         from openpyxl import Workbook

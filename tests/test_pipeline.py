@@ -142,8 +142,8 @@ class TestDatasetSize:
         assert extract_dataset_size("") is None
 
     def test_ignores_implausible_values(self):
-        # The version this replaced took the largest number in any sentence,
-        # so a p-value or a year became the "dataset size".
+        # A year and a p-value are both numbers in a sentence. Neither is a
+        # cohort, and nothing here should report them as one.
         assert extract_dataset_size("Published in 2021 with p < 0.001.") is None
 
 

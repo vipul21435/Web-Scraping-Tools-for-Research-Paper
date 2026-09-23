@@ -136,7 +136,8 @@ class TestPubMedSource:
 
     @responses.activate
     def test_a_record_with_no_abstract_still_comes_back(self, fast_client):
-        # The version this replaced raised AttributeError here and lost the run.
+        # Thousands of PubMed records have no abstract. One of them must not
+        # take the rest of the run down with it.
         responses.add(responses.GET, f"{EUTILS}/esearch.fcgi", json={"esearchresult": {"idlist": ["7"]}})
         responses.add(
             responses.GET, f"{EUTILS}/efetch.fcgi",

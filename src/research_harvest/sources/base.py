@@ -31,9 +31,9 @@ class RateLimiter:
     """
     Keeps at least `min_interval` seconds between calls.
 
-    Public research APIs publish request ceilings and expect them to be
-    respected; the tool that replaced this one hammered PubMed through a browser
-    with a fixed `sleep(5)`, which is both slower and ruder than pacing properly.
+    Both APIs are free, published with a request ceiling, and run by people who
+    would rather not be hammered. Pacing to the ceiling is also faster than
+    sleeping a fixed amount between calls.
     """
 
     def __init__(self, requests_per_second: float) -> None:

@@ -1,12 +1,9 @@
 """
 PubMed through the official E-utilities REST API.
 
-The previous version drove a headless Chrome browser over pubmed.ncbi.nlm.nih.gov,
-opened every article page in turn and slept five seconds between each. NCBI
-publishes a free API for exactly this, so the browser, the driver binary and the
-sleeps are all gone: `esearch` collects the PMIDs, `efetch` returns full records
-in batches of 200, and a whole year of results now costs a couple of requests
-instead of several hundred page loads.
+Two calls do the work. `esearch` returns the PMIDs for a query, `efetch` returns
+the full records for up to 200 of them at a time, so a year of results costs a
+couple of requests.
 """
 
 from __future__ import annotations
@@ -122,9 +119,9 @@ class PubMedSource:
         """
         Turn one PubmedArticle element into an Article.
 
-        Every field is treated as optional. The original crashed with
-        AttributeError the first time it met a record with no abstract, which in
-        PubMed is thousands of them.
+        Every field is optional. Thousands of PubMed records have no abstract,
+        plenty have no DOI, and some carry a collective author instead of a
+        list of names, so nothing here assumes an element exists.
         """
         pmid = _text(citation.find(".//PMID"))
         title = _text(citation.find(".//ArticleTitle"))
